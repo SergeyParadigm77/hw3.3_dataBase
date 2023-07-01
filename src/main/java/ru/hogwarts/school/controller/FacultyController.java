@@ -45,6 +45,8 @@ public class FacultyController {
         }
         return ResponseEntity.notFound().build();
     }
+
+
     @GetMapping
     public ResponseEntity<Collection<Faculty>> getAll() {
         return ResponseEntity.ok(facultyService.getAll());
